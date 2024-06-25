@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import 'zone.js';
+import { TradeChartComponent } from './app/trade-chart/trade-chart.component';
 
 @Component({
   selector: 'app-root',
+  imports:[TradeChartComponent],
   standalone: true,
   template: `
-    <h1>Hello from {{ name }}!</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
+  <h3>dddd</h3>
+ <app-trade-chart></app-trade-chart>
   `,
 })
 export class App {
